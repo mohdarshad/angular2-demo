@@ -1,0 +1,36 @@
+.main-content{
+  position: fixed;
+  margin-top: 52px;
+  margin-left: 200px;
+}
+
+.search-row-weather{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #dedede;
+}
+
+.search-btn{
+  background: #de2228;
+  color: white;
+  cursor: pointer;
+}
+
+.divider-line{
+  height: 2px;
+  background: #de2228;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.weather-result span{
+  background: #e3c00c;
+  padding: 3px;
+  border-radius: 7px;
+}
+
+.weather-icon img{
+  width: 100px;
+  margin:0 auto;
+  display: table-cell;
+}

@@ -1,0 +1,31 @@
+<div class="main-content container-fluid">
+  <div class="row">
+    <div class="col-md-12 search-row">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="registrationno">Registration No.</label>
+          <input type="text" class="form-control" id="registrationno">
+        </div>
+        <div class="form-group">
+          <label for="fleet">Fleet</label>
+          <input type="text" class="form-control" id="fleet">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Connected Vehicles</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Critical Health</label>
+        </div>
+        <button class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div style="height: 300px;"
+           leaflet
+           [leafletOptions]="options">
+      </div>
+    </div>
+  </div>
+</div>

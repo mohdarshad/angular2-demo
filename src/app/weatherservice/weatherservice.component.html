@@ -1,0 +1,32 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row search-row-weather">
+      <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Enter city" aria-label="City" aria-describedby="basic-addon2" [(ngModel)]="searchFor">
+          <span class="input-group-addon search-btn" id="basic-addon2" (click)="getCityWeather()">Search</span>
+        </div>
+      </div>
+    </div>
+    <div class="row divider">
+      <div class="col-xs-8 col-xs-offset-2 divider-line">
+
+      </div>
+    </div>
+    <div class="row search-result" *ngIf="searchMade && !noResult">
+      <div class="col-xs-offset-2 col-xs-2 weather-icon">
+        <img [src]="icon" alt="weather">
+      </div>
+      <div class="col-xs-8 weather-result">
+        <p>{{city}} , <b>{{description}}</b></p>
+        <p>Temprature from <span>{{tempMin}}</span> to <span>{{tempMax}}</span>, wind speed <span>{{wind}}kmph</span> and visibility <span>{{visibility}} meters</span></p>
+        <p>Coords [ {{lat}}, {{lng}}]</p>
+      </div>
+    </div>
+    <div class="row" *ngIf="searchMade && noResult">
+      <div class="col-xs-8 col-xs-offset-2">
+        No search result for the city: {{city}}
+      </div>
+    </div>
+  </div>
+</div>

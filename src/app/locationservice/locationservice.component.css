@@ -1,0 +1,21 @@
+.main-content{
+  position: fixed;
+  margin-top: 62px;
+  margin-left: 200px;
+  width: 100%;
+}
+
+.search-row{
+  padding: 10px;
+  margin-left: 10px;
+  background: #f8f8f8;
+}
+
+.form-inline div{
+  margin-right: 20px;
+  color: #5d5856;
+}
+.form-inline div label{
+
+  font-weight: normal !important;
+}

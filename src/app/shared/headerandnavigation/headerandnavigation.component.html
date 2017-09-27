@@ -1,0 +1,16 @@
+<div class="main-header">
+  <tr>
+    <td class="menu-bar" (click)="toggleMenu()">
+      <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </td>
+    <td class="logo"><img src="assets/hsdflogo.png" alt=""></td>
+    <td></td>
+  </tr>
+</div>
+<div class="left-navigation" [ngClass] = "fullMenuView == true? 'full-nav' : 'short-nav'">
+  <ul>
+    <li><a routerLink="/locationservice" routerLinkActive="active"><div><div class="icondiv"><i class="fa fa-map-marker" aria-hidden="true"></i></div><div class="menu-text">Location Service</div></div></a></li>
+    <li><a routerLink="/driverservice" routerLinkActive="active"><div class="icondiv"><i class="fa fa-truck" aria-hidden="true"></i></div><div class="menu-text">Driver Service</div></a></li>
+    <li><a routerLink="/weather" routerLinkActive="active"><div class="icondiv"><i class="fa fa-cloud" aria-hidden="true"></i></div><div class="menu-text">Weather</div></a></li>
+  </ul>
+</div>
